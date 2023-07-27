@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ASCII Art Generator</title>
+</head>
+<body>
+	<h1>ASCII Art Generator</h1>
+
+	<form method="post" action="/ascii-art">
+		<label for="text-input">Text:</label>
+		<input type="text" id="text-input" name="text">
+
+		<fieldset>
+			<legend>Banner:</legend>
+
+			<label>
+				<input type="radio" name="banner" value="banner1.txt" checked>
+				Banner 1
+			</label>
+
+			<label>
+				<input type="radio" name="banner" value="banner2.txt">
+				Banner 2
+			</label>
+
+			<label>
+				<input type="radio" name="banner" value="banner3.txt">
+				Banner 3
+			</label>
+		</fieldset>
+
+		<button type="submit">Generate ASCII Art</button>
+	</form>
+</body>
+</html>
